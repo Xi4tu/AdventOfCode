@@ -1,6 +1,3 @@
-# Import numpy
-import numpy as np
-
 # Create class to each element
 class X:
     score = 1
