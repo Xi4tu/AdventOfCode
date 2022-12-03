@@ -17,11 +17,16 @@ def totalPriority():
         # store character in common
         character = ""
 
+        stop = False
         # Check characters
         for c in parts[0]:
             for j in parts[1]:
                 if c == j:
                     character = c
+                    stop = True
+                    break
+            if stop:
+                break
         
         # Acumulate priority of the character
         sum += priorities.get(character) + 1
